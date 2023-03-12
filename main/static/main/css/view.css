@@ -1,0 +1,24 @@
+.btn-success {
+    background-color: #00BFA6;
+}
+
+.btn-success:hover {
+    background-color: #ffffff;
+    color: #00BFA6;
+    border-color: #00BFA6;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.shopping-list {
+    font-size: 25px;
+    margin: 10px 10px;
+}
+
+.list-group-item a:hover {
+    color: #00BFA6;
+}

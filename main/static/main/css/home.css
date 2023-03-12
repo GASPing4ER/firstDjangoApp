@@ -1,0 +1,13 @@
+.resize-img{
+    height: 70%;
+}
+
+.header {
+    height: 80vh;
+}
+
+@media only screen and (max-width: 375px) {
+    .resize-img {
+        height: 40%;
+    }
+  }

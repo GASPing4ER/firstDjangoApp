@@ -1,0 +1,22 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'main/css/view.css' %}">
+{% endblock %}
+{% block title %}View{% endblock %}
+
+
+{% block content %}
+    <h3>Shopping Lists:</h3>
+    <form method="post" action="#">
+        {% csrf_token %}
+        <ul class="list-group">
+        {% for td in user.todolist.all %}
+            <li class="list-group-item">
+                <button type="submit", name="delete", value="d{{td.id}}", class="btn btn-success d-inline-block">Delete</button>
+                <p class="shopping-list"><a href="/{{td.id}}">{{td.name}}</a></p>
+            </li>
+        </ul>
+        {% endfor %}
+    </form>
+{% endblock %}

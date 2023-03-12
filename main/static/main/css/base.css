@@ -1,0 +1,64 @@
+body {
+    background-color: #ffffff;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00BFA6;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+.main a {
+    color: #000000;
+}
+
+.main a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+span {
+    color: #00BFA6;
+}
+
+@media only screen and (max-width: 375px) {
+    .sidenav {
+        width: 100px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .main {
+        margin-left: 100px;
+    }
+
+    .main h1 {
+        font-size: 30px;
+    }
+  }

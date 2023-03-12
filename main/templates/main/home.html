@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+{% endblock %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <p>Welcome <span>{{user}}!</span><p>
+{% else %}
+    <p>You are not logged in. Log in <a href="/login"><span>here</span></a></p>
+{% endif %}
+<div class="header">
+    <h1 class="heading"><span>Get organized,</span> shop smarter</h1>
+    <img class="resize-img" src="{% static 'main/images/shoppingCart.png' %}" alt="">
+</div>
+
+
+{% endblock %}
